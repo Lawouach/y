@@ -13,7 +13,7 @@
     },
     "time": {
       "created": 1772707900533,
-      "updated": 1772708697755
+      "updated": 1772708703117
     }
   },
   "messages": [
@@ -2612,7 +2612,8 @@
       "info": {
         "role": "assistant",
         "time": {
-          "created": 1772708697733
+          "created": 1772708697733,
+          "completed": 1772708703096
         },
         "parentID": "msg_cbdac167e001mxy3DO1vRGxJth",
         "modelID": "claude-sonnet-4-6",
@@ -2623,16 +2624,18 @@
           "cwd": "/tmp/y",
           "root": "/tmp/y"
         },
-        "cost": 0,
+        "cost": 0.00694005,
         "tokens": {
-          "input": 0,
-          "output": 0,
+          "total": 16721,
+          "input": 3,
+          "output": 116,
           "reasoning": 0,
           "cache": {
-            "read": 0,
-            "write": 0
+            "read": 16541,
+            "write": 61
           }
         },
+        "finish": "tool-calls",
         "id": "msg_cbdac16850018kJis8sYe5Wzed",
         "sessionID": "ses_34260138affefTNPXbs6aH1baX"
       },
@@ -2649,19 +2652,118 @@
           "callID": "REDACTED",
           "tool": "bash",
           "state": {
-            "status": "running",
+            "status": "completed",
             "input": {
               "command": "git add main.py && git commit -m \"Add /bonjour endpoint returning static French greeting\"",
               "description": "Stage and commit bonjour endpoint",
               "workdir": "/tmp/y"
             },
+            "output": "[main 5e79945] Add /bonjour endpoint returning static French greeting\n 1 file changed, 5 insertions(+)\n",
+            "title": "Stage and commit bonjour endpoint",
+            "metadata": {
+              "output": "[main 5e79945] Add /bonjour endpoint returning static French greeting\n 1 file changed, 5 insertions(+)\n",
+              "exit": 0,
+              "description": "Stage and commit bonjour endpoint",
+              "truncated": false
+            },
             "time": {
-              "start": 1772708701016
+              "start": 1772708701016,
+              "end": 1772708703085
             }
           },
           "id": "prt_cbdac1fca001008k0iY6g4unNl",
           "sessionID": "ses_34260138affefTNPXbs6aH1baX",
           "messageID": "msg_cbdac16850018kJis8sYe5Wzed"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "0f61f440779806ac610559a4567ab05411d9bc41",
+          "cost": 0.00694005,
+          "tokens": {
+            "total": 16721,
+            "input": 3,
+            "output": 116,
+            "reasoning": 0,
+            "cache": {
+              "read": 16541,
+              "write": 61
+            }
+          },
+          "id": "prt_cbdac2b6d001mFZ0QLoNr6D27m",
+          "sessionID": "ses_34260138affefTNPXbs6aH1baX",
+          "messageID": "msg_cbdac16850018kJis8sYe5Wzed"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1772708703097,
+          "completed": 1772708705497
+        },
+        "parentID": "msg_cbdac167e001mxy3DO1vRGxJth",
+        "modelID": "claude-sonnet-4-6",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/tmp/y",
+          "root": "/tmp/y"
+        },
+        "cost": 0.0056736,
+        "tokens": {
+          "total": 16772,
+          "input": 1,
+          "output": 5,
+          "reasoning": 0,
+          "cache": {
+            "read": 16602,
+            "write": 164
+          }
+        },
+        "finish": "stop",
+        "id": "msg_cbdac2b79001WbjXPeH6xcD1xP",
+        "sessionID": "ses_34260138affefTNPXbs6aH1baX"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "0f61f440779806ac610559a4567ab05411d9bc41",
+          "id": "prt_cbdac343a001jKXwUt2IoIG0vR",
+          "sessionID": "ses_34260138affefTNPXbs6aH1baX",
+          "messageID": "msg_cbdac2b79001WbjXPeH6xcD1xP"
+        },
+        {
+          "type": "text",
+          "text": "Done.",
+          "time": {
+            "start": 1772708705408,
+            "end": 1772708705408
+          },
+          "id": "REDACTED",
+          "sessionID": "ses_34260138affefTNPXbs6aH1baX",
+          "messageID": "msg_cbdac2b79001WbjXPeH6xcD1xP"
+        },
+        {
+          "type": "step-finish",
+          "reason": "stop",
+          "snapshot": "0f61f440779806ac610559a4567ab05411d9bc41",
+          "cost": 0.0056736,
+          "tokens": {
+            "total": 16772,
+            "input": 1,
+            "output": 5,
+            "reasoning": 0,
+            "cache": {
+              "read": 16602,
+              "write": 164
+            }
+          },
+          "id": "prt_cbdac34cf001ab9ijFoC5sDKpg",
+          "sessionID": "ses_34260138affefTNPXbs6aH1baX",
+          "messageID": "msg_cbdac2b79001WbjXPeH6xcD1xP"
         }
       ]
     }
