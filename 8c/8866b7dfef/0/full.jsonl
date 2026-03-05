@@ -13,7 +13,7 @@
     },
     "time": {
       "created": 1772707900533,
-      "updated": 1772708339346
+      "updated": 1772708343698
     }
   },
   "messages": [
@@ -2075,7 +2075,8 @@
       "info": {
         "role": "assistant",
         "time": {
-          "created": 1772708339323
+          "created": 1772708339323,
+          "completed": 1772708343680
         },
         "parentID": "REDACTED",
         "modelID": "claude-sonnet-4-6",
@@ -2086,16 +2087,18 @@
           "cwd": "/tmp/y",
           "root": "/tmp/y"
         },
-        "cost": 0,
+        "cost": 0.0078033,
         "tokens": {
-          "input": 0,
-          "output": 0,
+          "total": 16102,
+          "input": 1,
+          "output": 103,
           "reasoning": 0,
           "cache": {
-            "read": 0,
-            "write": 0
+            "read": 15576,
+            "write": 422
           }
         },
+        "finish": "tool-calls",
         "id": "msg_cbda69e7b001sUIUcdVBubQrnP",
         "sessionID": "ses_34260138affefTNPXbs6aH1baX"
       },
@@ -2112,18 +2115,117 @@
           "callID": "REDACTED",
           "tool": "bash",
           "state": {
-            "status": "running",
+            "status": "completed",
             "input": {
               "command": "git add main.py pyproject.toml uv.lock .python-version && git commit -m \"Add echo endpoint and uv dependencies\"",
               "description": "Stage relevant files and commit"
             },
+            "output": "[main b5e0091] Add echo endpoint and uv dependencies\n 4 files changed, 233 insertions(+)\n create mode 100644 .python-version\n create mode 100644 pyproject.toml\n create mode 100644 uv.lock\n",
+            "title": "Stage relevant files and commit",
+            "metadata": {
+              "output": "[main b5e0091] Add echo endpoint and uv dependencies\n 4 files changed, 233 insertions(+)\n create mode 100644 .python-version\n create mode 100644 pyproject.toml\n create mode 100644 uv.lock\n",
+              "exit": 0,
+              "description": "Stage relevant files and commit",
+              "truncated": false
+            },
             "time": {
-              "start": 1772708341612
+              "start": 1772708341612,
+              "end": 1772708343670
             }
           },
           "id": "prt_cbda6a460001YyXbWtX2dAuHoE",
           "sessionID": "ses_34260138affefTNPXbs6aH1baX",
           "messageID": "msg_cbda69e7b001sUIUcdVBubQrnP"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "454c1faf884c2d110cb0cdae9d09e5bf550bf273",
+          "cost": 0.0078033,
+          "tokens": {
+            "total": 16102,
+            "input": 1,
+            "output": 103,
+            "reasoning": 0,
+            "cache": {
+              "read": 15576,
+              "write": 422
+            }
+          },
+          "id": "prt_cbda6af760018CDG0M6ujhqDMM",
+          "sessionID": "ses_34260138affefTNPXbs6aH1baX",
+          "messageID": "msg_cbda69e7b001sUIUcdVBubQrnP"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1772708343682,
+          "completed": 1772708345643
+        },
+        "parentID": "REDACTED",
+        "modelID": "claude-sonnet-4-6",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/tmp/y",
+          "root": "/tmp/y"
+        },
+        "cost": 0.0060999,
+        "tokens": {
+          "total": 16222,
+          "input": 1,
+          "output": 41,
+          "reasoning": 0,
+          "cache": {
+            "read": 15998,
+            "write": 182
+          }
+        },
+        "finish": "stop",
+        "id": "REDACTED",
+        "sessionID": "ses_34260138affefTNPXbs6aH1baX"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "454c1faf884c2d110cb0cdae9d09e5bf550bf273",
+          "id": "prt_cbda6b528001r6AxBU8EFItYgc",
+          "sessionID": "ses_34260138affefTNPXbs6aH1baX",
+          "messageID": "REDACTED"
+        },
+        {
+          "type": "text",
+          "text": "Committed with message \"Add echo endpoint and uv dependencies\", including `main.py`, `pyproject.toml`, `uv.lock`, and `.python-version`.",
+          "time": {
+            "start": 1772708345536,
+            "end": 1772708345536
+          },
+          "id": "prt_cbda6b529001IdXaD5qKn3rW23",
+          "sessionID": "ses_34260138affefTNPXbs6aH1baX",
+          "messageID": "REDACTED"
+        },
+        {
+          "type": "step-finish",
+          "reason": "stop",
+          "snapshot": "454c1faf884c2d110cb0cdae9d09e5bf550bf273",
+          "cost": 0.0060999,
+          "tokens": {
+            "total": 16222,
+            "input": 1,
+            "output": 41,
+            "reasoning": 0,
+            "cache": {
+              "read": 15998,
+              "write": 182
+            }
+          },
+          "id": "prt_cbda6b720001y547EZi5bF8T0q",
+          "sessionID": "ses_34260138affefTNPXbs6aH1baX",
+          "messageID": "REDACTED"
         }
       ]
     }
