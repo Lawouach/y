@@ -11,3 +11,8 @@ def hello_world():
 @app.get("/echo")
 def echo(message: str):
     return {"message": message}
+
+
+@app.get("/bonjour")
+def bonjour():
+    return {"message": "Bonjour"}
