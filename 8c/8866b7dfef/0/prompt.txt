@@ -1,0 +1,17 @@
+Please create a fastapi hello world endpoint
+
+---
+
+please commit
+
+---
+
+let's add dependencies using uv
+
+---
+
+add a second message that echoes a gievn message over a query string
+
+---
+
+plese commit
